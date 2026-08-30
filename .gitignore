@@ -1,0 +1,80 @@
+# ====================================================================
+# CMake & Build Directories (CLion, Pico-SDK, Native)
+# ====================================================================
+cmake-build-*/
+build/
+bin/
+out/
+
+# CMake generierte Artefakte
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# ====================================================================
+# Embedded / Pico-SDK Binaries & Intermediate Files
+# ====================================================================
+*.elf
+*.bin
+*.hex
+*.uf2
+*.map
+*.dis
+*.d
+*.o
+*.obj
+*.a
+*.lib
+
+# Generated Pico-SDK Headers
+generated/
+pico_sdk_import.cmake.user
+pico-sdk/
+
+# ====================================================================
+# IDE & Tool-Configs
+# ====================================================================
+# CLion / JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code (behält empfohlene extensions/settings, ignoriert lokalen Cache)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ====================================================================
+# Host / AI-Server & Python Submodule (falls im gleichen Repo)
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.log
+_archiv/
+
+# ====================================================================
+# OS Spezifisch
+# ====================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
